@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.form-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    border-color: transparent;
+    margin-bottom: 20px;
+    font-size: medium;
+    text-align: center;
+}
+
+.voltar{
+    color: black;
+}
+
+.voltar:hover{
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+    background-color: #525b6c;
+}
+
+.cadastrar{
+    padding: 5px;
+    border-radius: 8px;
+    border-color: transparent;
+    width: 8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

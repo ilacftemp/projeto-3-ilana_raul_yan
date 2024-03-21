@@ -1,0 +1,7 @@
+Set-ExecutionPolicy RemoteSigned
+Get-ExecutionPolicy
+.\env\Scripts\Activate.ps1
+Set-ExecutionPolicy Restricted
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate

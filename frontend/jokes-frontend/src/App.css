@@ -1,0 +1,284 @@
+body, html{
+  height: 100%;
+  background-image: url(../public/stand-up.png);
+  background-size: cover; /* Adicione esta linha */
+  background-repeat: no-repeat; /* Para evitar repetição da imagem */
+  background-attachment: fixed; /* Para manter a imagem fixa enquanto rola a página */  
+  cursor: url(hand.png), auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  cursor: url(hand.png), auto;
+}
+input{
+  cursor: url(hand.png), auto;
+}
+
+
+.App-header {
+  background-color: #454c59;
+  min-height: 80px;
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5em;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.botoes {
+  display: flex;
+  min-height: 80px;
+  padding: 0px 50px 0px 50px;
+  width: 500px;
+  align-self: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.botao {
+  display: flex;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.19);
+  cursor: url(hand.png), auto;
+}
+
+.new{
+  padding: 10px 15px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.19);
+  font-weight: bold;
+  background-color: rgb(107, 107, 255);
+
+  transition: rgb(49, 49, 138);
+  color: #000000;
+}
+
+.hear{
+  padding: 10px 15px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.19);
+  font-weight: bold;
+  background-color: rgb(243, 255, 107);
+
+  transition: rgb(49, 49, 138);
+  color: #000000;
+}
+
+.like{
+  padding: 10px 15px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(17, 17, 17, 0.453);
+  font-weight: bold;
+  background-color: rgb(135, 207, 47);
+
+  transition: rgb(49, 49, 138);
+  color: #000000;
+}
+
+.textButton {
+  text-decoration: none;
+  color: #000000;
+}
+
+.saved{
+  font-size: 24px;
+  font-weight: bold;
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% { color: #ff0000; } /* Vermelho no início */
+  50% { color: #00ff00; } /* Verde no meio */
+  100% { color: #0000ff; } /* Azul no final */
+}
+
+.options{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding{
+  margin: 0 10% 0 0;
+}
+
+.nobreak{
+  white-space: nowrap
+}
+
+.big-box{
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  min-width: 600px;
+  align-self: center;
+  min-height: 150px;
+  justify-content: space-around;
+  border-radius: 5px;
+  margin: 1.5em 0em;
+}
+
+.text{
+  font-size: 24px;
+  color:#000000;
+  font-family: "Permanent Marker", cursive;
+}
+
+.any-custom{
+  display: flex;
+  font-size: 18px;
+  justify-content: space-around;
+  align-self: center;
+  width: 150px;
+}
+
+.categories{
+  display: flex;
+  font-size: 18px;
+  justify-content: space-around;
+}
+
+.textError{
+  font-size: 24px;
+  font-weight: bold;
+  animation: colorChangeError 1s infinite;
+}
+
+@keyframes colorChangeError {
+  0% { color: #ff0000; } /* Vermelho no início */
+  70% { color: #000000; } /* Verde no meio */
+}
+
+.icon{
+  width: 4rem;
+  height: auto;
+}
+
+.horizontal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 12px;
+  height: 12px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #383636;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.logout-button {
+  background-color: #1ec48f; /* Cute pink color, you can change it to your preference */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 11rem;
+  margin-right: 20px;
+}
+
+.logout-button:hover {
+  background-color: #588b7b; /* Slightly darker pink on hover */
+}
+
+.has{
+  background-color: transparent;
+  color: rgb(255, 245, 166);
+  padding: 8px;
+  margin: 7px;
+  border: transparent;
+  font-size: medium;
+}
+.has:hover{
+  background-color: rgba(255, 245, 166, 0.281);
+  border-radius: 6px;
+  text-decoration: underline;
+}
+
+.or{
+  font-size: 1rem;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+}
+
+.form-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin{
+  border-radius: 8px;
+  border-color: transparent;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(219, 219, 219);
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.input-signin{
+  display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 150px;
+  height: 27px;
+  border-radius: 8px;
+  border-color: transparent;
+  margin-bottom: 7px;
+  font-size: medium;
+  text-align: center;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
